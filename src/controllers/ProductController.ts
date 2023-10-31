@@ -1,6 +1,7 @@
 // ProductController.ts
-const { Request, Response,NextFunction }=require( 'express');
-// const { ProductService } =require( '../services/ProductService');
+
+import { Request, Response, NextFunction } from 'express'; 
+
 import ProductService from '../services/ProductService';
 const { RedisService } =require( '../services/RedisService');
 const { validateData, productSchema } =require( '../utils/joi');
